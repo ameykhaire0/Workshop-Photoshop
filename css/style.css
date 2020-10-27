@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+  box-shadow: 0 1px 4px 5px #ddddde;
+}
+header .header-container {
+  display: flex;
+  width: 1177px;
+  height: 83px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+header .header-container nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a727c;
+  text-transform: uppercase;
+  padding: 33px 20px;
+}
+header .header-container nav ul li a:hover {
+  color: #2b3b4c;
+  padding: 27px 20px;
+  border-bottom: 6px solid #00baf2;
+}
+header .header-container nav ul li .active {
+  color: #2b3b4c;
+  padding: 27px 20px;
+  border-bottom: 6px solid #00baf2;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 1177px;
+  height: 634px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.content .team-container {
+  width: 50%;
+}
+.content .team-container .team-title {
+  font-size: 60px;
+  padding: 35px 0;
+  color: #2b3b4c;
+}
+.content .team-container .team-desc {
+  font-size: 16px;
+  color: #2b3b4c;
+}
+.content .team-container button {
+  margin: 34px 20px 34px 0;
+  appearance: none;
+  height: 42px;
+  width: 139px;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.content .team-container button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.content .team-container #btn1 {
+  background-color: #00baf2;
+}
+.content .team-container #btn2 {
+  background-color: #6a727c;
+}
+footer {
+  width: 100%;
+  background-color: #25323a;
+}
+footer .footer-container {
+  display: flex;
+  height: 33px;
+  width: 1177px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+footer .footer-container ul li a {
+  text-decoration: none;
+  padding: 5px;
+}
+footer .footer-container p {
+  font-size: 11px;
+  color: #fff;
+}
+footer .footer-container p a {
+  text-decoration: none;
+  color: #00baf2;
+}

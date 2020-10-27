@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@dark-blue: #2b3b4c;
+@dark-grey: #6a727c;
+@blue: #00baf2;
+@shadow: #ddddde;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  box-shadow: 0 1px 4px 5px @shadow;
+  .header-container {
+    display: flex;
+    width: 1177px;
+    height: 83px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        li {
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: @dark-grey;
+            text-transform: uppercase;
+            padding: 33px 20px;
+            &:hover {
+              color: @dark-blue;
+              padding: 27px 20px;
+              border-bottom: 6px solid @blue;
+            }
+          }
+          .active {
+            color: @dark-blue;
+            padding: 27px 20px;
+            border-bottom: 6px solid @blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 1177px;
+  height: 634px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  .team-container {
+    width: 50%;
+    .team-title {
+      font-size: 60px;
+      padding: 35px 0;
+      color: @dark-blue;
+    }
+    .team-desc {
+      font-size: 16px;
+      color: @dark-blue;
+    }
+    button {
+      margin: 34px 20px 34px 0;
+      appearance: none;
+      height: 42px;
+      width: 139px;
+      border: none;
+      color: #fff;
+      border-radius: 15px;
+      font-size: 16px;
+      opacity: 0.9;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    #btn1 {
+      background-color: @blue;
+    }
+    #btn2 {
+      background-color: @dark-grey;
+    }
+  }
+  img {
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #25323a;
+  .footer-container {
+    display: flex;
+    height: 33px;
+    width: 1177px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      li {
+        a {
+          text-decoration: none;
+          padding: 5px;
+        }
+      }
+    }
+    p {
+      font-size: 11px;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: @blue;
+      }
+    }
+  }
+}
